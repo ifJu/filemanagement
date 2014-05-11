@@ -1,4 +1,13 @@
 <?php
+
+/*
+*	Filemanagement PHP by ifJu
+*	www.github.com/ifju/filemanagement
+*	www.ifju.url.ph
+*	Do not change the name of document
+*	Enjoy it !
+*/
+
 ini_set("display_errors",0);error_reporting(0);
 ?>
 <script type="text/javascript">
@@ -1438,6 +1447,7 @@ if (isset($_GET["function"])) {
    $file = fopen($_GET["viewdir"].$_GET["nf"], "w+");
    fclose($file);
   }
+  ?><script>window.location.href="filemanagement.php?viewdir=<?php echo $viewdir; ?>";</script><?php
 }
 ?>
 <head>
